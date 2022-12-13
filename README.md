@@ -1,2 +1,2 @@
 # VDrive
-Netlify link : https://vdrive-drive4u.netlify.app/home-user
+Netlify link : https://vdrive-drive4u.netlify.app/
