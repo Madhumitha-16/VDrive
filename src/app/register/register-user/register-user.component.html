@@ -1,0 +1,40 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+      <div class="row" style="padding:20px; background-color:#eff0f2;border-radius:15px;
+      -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+      box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);width:30%;margin-left: 20%;">
+
+  <div class="col-sm-12">
+    <form [formGroup]="registerForm">
+      <h1>Register</h1>
+      <hr style="width: 10%;">
+      <div class="form-group" >
+        <label for="exampleInputEmail1">Email address</label>
+        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputUsername">Username</label>
+          <input formControlName="username" type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp" placeholder="username">
+          <small id="userHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="passwordInput">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="passwordInput" aria-describedby="passHelp" placeholder="password">
+        <small id="passHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+          <label for="CpasswordInput">Confirm Password</label>
+          <input formControlName="cpass" type="password" class="form-control" id="CpasswordInput" aria-describedby="CpassHelp" placeholder="password">
+          <small id="CpassHelp" class="form-text text-muted"></small>
+        </div>
+      <div class="form-group" style="text-align:center;">
+          <button type="button" class="btn btn-dark" style="background-color:#fd288c; margin-right: 5%;" (click)="registerUser()">Register</button>
+          <button type="button" class="btn btn-secondary" style="background-color:#fd288c;">Log in</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>

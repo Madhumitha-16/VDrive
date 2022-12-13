@@ -1,0 +1,89 @@
+<mat-toolbar class="prof-head">
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <span><h1>VDrive</h1></span>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/user-profile'"> My Account </a>
+      <a mat-button [routerLink]="'/bookings'"> Bookings </a>
+      <mat-icon class="icon">meeting_room</mat-icon>
+      <a mat-button [routerLink]="'/login-user'"> Logout </a>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+
+<div class="head">
+  <h2>Hey there!<br><br>Welcome to VDrive!</h2>
+  <h3>"Sit back and chill, we are here !"</h3>
+  <h4>Get started with your ride</h4>
+  <button class="button1" mat-raised-button [routerLink]="'/bookings'" color = "#fff" > Book Now </button>
+  <button class="button2" mat-raised-button  [routerLink]="'/history'" color = "#fff" > My Rides </button>
+</div>
+<app-register-section></app-register-section>
+
+<div class='section'>
+  <div class='column'>
+    <mat-icon class="icon-list">alarm_on</mat-icon>
+      <h1 class="icon-text">Easy access and time saving</h1>
+  </div>
+  <div class='column' >
+    <mat-icon  class="icon-list">verified_user</mat-icon>
+    <h1 class="icon-text">Verified and experienced drivers</h1>
+  </div>
+  <div class='column' >
+    <mat-icon  class="icon-list">security</mat-icon>
+    <h1 class="icon-text">Personalized and secured services</h1>
+  </div>
+</div>
+<div class='content'>
+  <div class='columnimg'>
+    <img src="https://ik.imagekit.io/drive/Web_Site/city-drivers_OWOIAXQbVf5.jpeg?updatedAt=1636614930677" alt="Default" class="img-thumbnail">
+  </div>
+  <div class='column' >
+    <div class="heading"> <h1>Relax and have a chill ride!<br></h1>
+    <p>In this busy modern world, why need to drive long way to office or back to home. We are there sit have a relax ride with our experienced drivers.</p>
+  </div>
+</div>
+
+</div>
+<div class='content'>
+  <div class='column'>
+    <div class="heading2"> <h1>Don't miss your family time!<br></h1>
+    <p>Don't spoil your quality time with family busy waiting in the traffic or being concerned about driving. Have a happy and safe journey with our drivers.</p>
+  </div>
+  <div class='column' >
+      <img src="https://freecarforum.com/wp-content/uploads/2018/11/Used-Car-for-You-and-Your-Family.jpg" alt="Default" class="img-thumbnail2">
+  </div>
+</div>
+
+</div>
+
+
+<div class='content'>
+  <div class='columnimg'>
+    <img src="https://www.cartoq.com/wp-content/uploads/2020/04/senior-citizen-cars-featured.jpg" alt="Default" class="img-thumbnail3">
+  </div>
+  <div class='column' >
+    <div class="heading3"> <h1>No worries we take care of your loved ones<br><br>journey!</h1>
+    <p>In this busy modern world, why need to drive long way to office or back to home. We are there sit have a relax ride with our experienced drivers.</p>
+  </div>
+</div>
+</div>
+<div class="price">
+  <div class="price-col2">
+      <h5>View our packages and offers, Choose your option, Hop in, Let's Go!</h5>
+  </div>
+  <div class="price-col">
+      <button class="button3" mat-raised-button  [routerLink]="'/user-pricing'" >Pricing & Offers </button>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+
+

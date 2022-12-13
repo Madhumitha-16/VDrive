@@ -1,0 +1,85 @@
+
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <span><h1>VDrive</h1></span>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/driver-profile'"> My Account </a>
+      <a mat-button [routerLink]="'/driver-rides'"> Rides </a>
+      <mat-icon>meeting_room</mat-icon>
+      <a mat-button [routerLink]="'/login-driver'"> Logout </a>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<div class="head">
+  <h2 class="headtext">Hey there!<br><br>Welcome to VDrive</h2>
+  <h3 class="headtext1">Thank you for being a part of us!</h3>
+  <button class="button-head" mat-stroked-button [routerLink]="'/driver-rides'" color = "#fff" > Get a ride </button>
+  <button class="button-head" mat-stroked-button  [routerLink]="'/history'" color = "#fff" > My Rides </button>
+</div>
+
+<div class='section'>
+  <div class='column'>
+    <mat-icon class="icon-list">alarm_on</mat-icon>
+      <h1 class="icon-text">Easy access and job gurantee</h1>
+  </div>
+  <div class='column' >
+    <mat-icon  class="icon-list">verified_user</mat-icon>
+    <h1 class="icon-text">Verified users only</h1>
+  </div>
+  <div class='column' >
+    <mat-icon  class="icon-list">security</mat-icon>
+    <h1 class="icon-text">Personalized and secured earning</h1>
+  </div>
+</div>
+<div class='content'>
+  <div class='columnimg'>
+    <img src="https://www.pbctoday.co.uk/news/wp-content/uploads/2020/04/Keeping-your-drivers-safe-in-the-Covid-19-pandemic.jpg" alt="Default" class="img-thumbnail">
+  </div>
+  <div class='column' >
+    <div class="heading"> <h1>Secure and safe rides!<br></h1>
+    <p>In this busy modern world, why need to drive long way to office or back to home. We are there sit have a relax ride with our experienced drivers.</p>
+  </div>
+</div>
+
+</div>
+<div class='content'>
+  <div class='column'>
+    <div class="heading2"> <h1>Job safety and better earnings!<br></h1>
+    <p>We assure you with your job and to get a better earning.</p>
+  </div>
+  <div class='column' >
+      <img src="https://content.jdmagicbox.com/comp/chennai/l5/044pxx44.xx44.100802145437.f2l5/catalogue/best-call-drivers-mogappair-west-chennai-driver-service-agents-19ovgi9.jpg?" alt="Default" class="img-thumbnail2">
+  </div>
+</div>
+
+</div>
+
+<div class='content'>
+  <div class='columnimg'>
+    <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/08/women-driver.jpg?fit=800%2C472&ssl=1" alt="Default" class="img-thumbnail3">
+  </div>
+  <div class='column' >
+    <div class="heading3"> <h1>Set your own ride cost and time!</h1>
+    <p>Fix your ride cost per km on your own and get the ride to go on your own time phase.</p>
+  </div>
+</div>
+</div>
+<div class="price">
+  <div class="price-col2">
+      <h5>Earn at your own pace and price. Happy earning!</h5>
+  </div>
+  <div class="price-col">
+      <button class="button3" mat-raised-button  [routerLink]="'/driver-pricing'" >Pricing</button>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+
+

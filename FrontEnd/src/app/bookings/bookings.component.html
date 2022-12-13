@@ -1,0 +1,91 @@
+<mat-toolbar class="prof-head">
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <span>VDrive</span>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/user-profile'"> My Account </a>
+      <a mat-button [routerLink]="'/bookings'"> Bookings </a>
+      <a mat-button [routerLink]="'/login-user'"> Logout </a>
+
+      <router-outlet></router-outlet>
+    </div>
+</mat-toolbar-row>
+</mat-toolbar>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<div class="container">
+  <mat-card>
+  <form action="/booking" method="post">
+  <form [formGroup]="bookingForm">
+
+    <h1>Booking</h1>
+    <hr style="width: 10%;">
+    <div class="form-group" >
+      <label for="firstName">First Name</label>
+      <input formControlName="firstName" type="text" class="form-control" id="exampleInputFirstName" aria-describedby="firstNameHelp" placeholder="Enter First Name">
+      <small id="firstNameHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input formControlName="lastName" type="text" class="form-control" id="lastNameInput" aria-describedby="lastNameHelp" placeholder="Enter Last Name">
+      <small id="lastNameHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="mobileNo">Mobile Number</label>
+      <input formControlName="mobileNo" type="text" class="form-control" id="mobilenoInput" aria-describedby="mobileNoHelp" placeholder="+91 xxxxxxxxxx">
+      <small id="mobileNoHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input formControlName="date" type="date" class="form-control" id="dateInput" aria-describedby="dateHelp">
+      <small id="dateHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="days">Days</label>
+      <input formControlName="days" type="number" class="form-control" id="daysInput" aria-describedby="daysHelp">
+      <small id="daysHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <mat-radio-group aria-label="Select an option" formControlName="typeOfRide" class="form-control">
+        <mat-radio-button value="Round-Trip">Round-Trip</mat-radio-button>
+        <mat-radio-button value="Outstation">Outstation</mat-radio-button>
+        <mat-radio-button value="Straight Drive">Straight Drive</mat-radio-button>
+        <mat-radio-button value="Hourly Drive">Hourly Drive</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  <div class="form-group">
+    <label for="time">Time</label>
+    <input formControlName="time" type="time" class="form-control" id="timeInput" aria-describedby="timeHelp" placeholder="">
+    <small id="timeHelp" class="form-text text-muted"></small>
+  </div>
+    <div class="form-group">
+      <label for="pickUp">Pick Up</label>
+      <input formControlName="pickUp" type="text" class="form-control" id="pickUpInput" aria-describedby="pickUpHelp" placeholder="Enter the location">
+      <small id="pickUpHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="destiny">Destination</label>
+      <input formControlName="destiny" type="text" class="form-control" id="destinyInput" aria-describedby="destinyHelp" placeholder="Enter the destination">
+      <small id="destinyHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group" style="text-align:center;">
+        <button type="button" mat-raised-button class="button1" style="background-color:#fd288c; color: #fff;"(click)="confirmBooking()">Confirm Booking</button>
+    </div>
+  </form>
+</form>
+</mat-card>
+</div>
+<div class="expansion-panel">
+
+</div>
+</body>
+
+
+
+
+
+
+
+

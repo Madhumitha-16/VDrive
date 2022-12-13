@@ -1,0 +1,50 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <h1>VDrive</h1>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a  mat-button [routerLink]="'/admin-profile'"> Home </a>
+      <a  mat-button [routerLink]="'/home-user'"> Users </a>
+      <a mat-button [routerLink]="'/register-user'"> Drivers </a>
+      <a mat-button [routerLink]="'/driver-rides'"> Bookings </a>
+      <a mat-button [routerLink]="'/login-admin'"> Logout </a>
+
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-toolbar-row>
+
+
+</mat-toolbar>
+
+<div class="head">
+  <h2 class="headtext">Hi Admin!<br><br></h2>
+  <h3 class="headtext1">Check out the details</h3>
+  <button class="button-head" mat-raised-button [routerLink]="'/'" color = "" > Users </button>
+  <button class="button-head" mat-raised-button  [routerLink]="'/'" color = "#fff" > Drivers </button>
+  <button class="button-head" mat-raised-button  [routerLink]="'/'" color = "#fff" > Bookings </button>
+</div>
+
+<div class='section'>
+  <div class='column'>
+    <mat-icon class="icon-list">alarm_on</mat-icon>
+      <h1 class="icon-text">Maintain Customer Relationship</h1>
+  </div>
+  <div class='column' >
+    <mat-icon  class="icon-list">verified_user</mat-icon>
+    <h1 class="icon-text">Verified users only</h1>
+  </div>
+  <div class='column' >
+    <mat-icon  class="icon-list">security</mat-icon>
+    <h1 class="icon-text">Secure the accounts</h1>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+
+
+
+

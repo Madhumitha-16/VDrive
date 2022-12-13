@@ -1,0 +1,45 @@
+
+.container{
+  margin: 4% 35% 5%;
+  padding: 1% 1% 1%;
+ float: left;
+ width: 30%;
+ background-color: rgb(255, 255, 255);
+ border-radius: 2%;
+}
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+h1{
+ font-size: 30px;
+ text-align: center;
+}
+
+body{
+ background-color: rgb(236, 234, 234);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+mat-toolbar-row{
+  height: 7vh;
+  background-color:	rgba(12, 12, 12, 0.877);
+  color: rgb(255, 255, 255);
+
+}
+mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+a{
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+mat-icon{
+  margin-right: -4%;
+}

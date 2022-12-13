@@ -1,0 +1,38 @@
+
+.row {
+  display: flex;
+  height: 100%;
+}
+.head{
+  margin-top: 20%;
+}
+.column {
+  flex: 50%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+.column1 {
+  flex: 70%;
+  background-image: url(https://www.meru.in/assets/images/homeimages/bg_hero_curve.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+hr{
+  width: 10%;
+}
+h1{
+  font-size: 1cm;
+}
+.button1{
+  margin: 10% 3% 0;
+  padding: 2% 7% 2%;
+  background-color: #fd288c;
+  color: #fff;
+  font-size: 150%;
+}
+mat-card{
+  margin: 30% 10% 0;
+  padding: 10% 10% 15%;
+}

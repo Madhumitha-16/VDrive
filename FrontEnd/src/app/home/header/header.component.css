@@ -1,0 +1,27 @@
+
+.mat-toolbar{
+  height: 7vh;
+  background-color:	rgba(17, 17, 17, 0.877);
+  color: floralwhite;
+
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+a{
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+mat-icon{
+  margin-right: -4%;
+}
+h1{
+  font-size: 200%;
+}
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}

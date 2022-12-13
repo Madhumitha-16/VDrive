@@ -1,0 +1,23 @@
+
+
+.container{
+  margin: 1% 35% 10%;
+  padding: 1% 1% 1%;
+ float: left;
+ width: 30%;
+ background-color: rgb(255, 255, 255);
+ border-radius: 2%;
+
+}
+h1{
+ font-size: 30px;
+ text-align: center;
+}
+body{
+  background-color: rgb(241, 241, 241);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-image: url(/assets/images/register.jpg);
+
+}

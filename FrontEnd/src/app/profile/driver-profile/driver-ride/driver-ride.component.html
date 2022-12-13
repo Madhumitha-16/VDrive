@@ -1,0 +1,74 @@
+<body>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <span><h1>VDrive</h1></span>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/driver-profile'"> My Account </a>
+      <a mat-button [routerLink]="'/driver-rides'"> Rides </a>
+      <mat-icon>meeting_room</mat-icon>
+      <a mat-button [routerLink]="'/login-driver'"> Logout </a>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<!-- <div id="banner">
+  Accepted Bookings:
+</div>
+
+<div class="card">
+    <div *ngFor="let accept of acceptedRideDetails.msg">
+      <div id="block">
+        <mat-card>
+          <h1>#id {{accept._id.toString()}}</h1>
+          <h3>First Name: {{accept.firstName}}<br>
+          Last Name: {{accept.lastName}}<br>
+          Mobile No.: {{accept.mobileNo}}<br>
+          Date: {{ (accept.date.length>11)? (accept.date | slice:0:10)+'':(accept.date) }}<br>
+          Time: {{accept.time}}<br>
+          Ride Type: {{accept.typeOfRide}}<br>
+          Pick Up Location: {{accept.pickUp}}<br>
+          Destination: {{accept.destiny}}</h3>
+          Status: {{accept.status}}
+
+        <h2>--------------------------------------</h2>
+        </mat-card>
+     </div>
+    </div>
+</div> -->
+
+<div id="banner">
+  Requested Bookings:
+</div>
+
+<div class="card">
+    <div *ngFor="let ride of driverRideDetails.data">
+      <div id="block">
+        <mat-card>
+          <h1>#id {{ride._id.toString()}}</h1>
+          <h3>First Name: {{ride.firstName}}<br>
+          Last Name: {{ride.lastName}}<br>
+          Mobile No.: {{ride.mobileNo}}<br>
+          Date: {{ (ride.date.length>11)? (ride.date | slice:0:10)+'':(ride.date) }}<br>
+          Days: {{ride.days}}<br>
+          Time: {{ride.time}}<br>
+          Ride Type: {{ride.typeOfRide}}<br>
+          Pick Up Location: {{ride.pickUp}}<br>
+          Destination: {{ride.destiny}}</h3>
+          Status: {{ride.status}}
+        <!-- <form method="put" action=`/bookings/${ride._id}`> -->
+          <!-- <button class="button1" mat-raised-button (click)="alert()"> Accept </button> -->
+
+          <button class="button1" mat-raised-button (click)="bookingAccepted(ride._id)"> Accept </button>
+        <!-- </form> -->
+        <h2>--------------------------------------</h2>
+        </mat-card>
+      </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+</body>

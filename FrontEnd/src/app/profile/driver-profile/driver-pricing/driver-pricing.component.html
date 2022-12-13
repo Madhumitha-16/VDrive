@@ -1,0 +1,61 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <span><h1>VDrive</h1></span>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/driver-profile'"> My Account </a>
+      <a mat-button [routerLink]="'/rides'"> Rides </a>
+      <mat-icon>meeting_room</mat-icon>
+      <a mat-button [routerLink]="'/login-driver'"> Logout </a>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!--<body>
+<h1 style="margin: 5% 45% 1%;font-size: 60px;">Pricing</h1>
+<hr style="width: 4%;margin: 1% 48% 1%;">
+<div class='section'>
+  <div class='column'>
+    <mat-card>Ajndfjknjcn,znc,nzjk</mat-card>
+  </div>
+  <div class='column1' >
+    <mat-card>Ajndfjknjcn,znc,nzjk</mat-card>
+  </div>
+  <div class='column2' >
+    <mat-card>Ajndfjknjcn,znc,nzjk</mat-card>
+  </div>
+</div>
+</body>-->
+<h1 style="text-align: center;margin-top: 3%;font-size: 50px;">Pricing Table</h1><br>
+<hr>
+<div id="pricing-table" class="clear">
+  <div class="plan">
+      <h3>Weekly<span>Rs.59</span></h3>
+      <a class="signup" [routerLink]="'/bookings'">Book Now</a>
+      <ul>
+          <li><b>Max 4 hours</b> Per day</li>
+          <li><b>Round-trips</b> Only</li>
+          <li><b>Earn 10</b> Drive points</li>
+      </ul>
+  </div>
+  <div class="plan" id="most-popular">
+      <h3>Monthly<span>Rs.29</span></h3>
+      <a class="signup" [routerLink]="'/bookings'">Book Now</a>
+      <ul>
+          <li><b>Max 6 hours</b> Per Day</li>
+          <li><b>Round-trip and One-Stop Drive</b> Only</li>
+          <li><b>Earn 50</b> Drive points</li>
+      </ul>
+  </div>
+  <div class="plan">
+      <h3>Annual<span>Rs.17</span></h3>
+  <a class="signup" [routerLink]="'/bookings'">Book Now</a>
+      <ul>
+          <li><b>24x7</b> Service</li>
+          <li><b>All type of</b> Drives</li>
+          <li><b>Earn 100</b> Drive points </li>
+      </ul>
+  </div>
+</div>

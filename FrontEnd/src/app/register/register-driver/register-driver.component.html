@@ -1,0 +1,80 @@
+<app-header></app-header>
+
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<body>
+  <h1 style="text-align: center;padding-top: 4%;">Welcome to VDrive!<br></h1>
+  <h4 style="text-align: center;">Create new account and continue</h4>
+
+
+<div class="container">
+  <mat-card>
+  <form action="/registerDriver" method="post">
+  <form [formGroup]="registerDriverForm">
+    <h1>Register</h1>
+    <hr style="width: 10%;">
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Email address</label>
+      <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputUsername">Username</label>
+        <input formControlName="username" type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp" placeholder="username">
+        <small id="userHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="passwordInput">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="passwordInput" aria-describedby="passHelp" placeholder="password">
+      <small id="passHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="CpasswordInput">Confirm Password</label>
+        <input formControlName="cpass" type="password" class="form-control" id="CpasswordInput" aria-describedby="CpassHelp" placeholder="password">
+        <small id="CpassHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="addressInput">Address</label>
+        <input formControlName="address" type="text" class="form-control" id="addressInput" aria-describedby="addressHelp" placeholder="Address">
+        <small id="addressHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="FileInput">Upload License</label>
+      <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+      </div>
+      <div class="form-group">
+        <label for="licenseInput">License Number</label>
+        <input formControlName="license" type="text" class="form-control" id="licenseInput" aria-describedby="licenseHelp" placeholder="License Number">
+        <small id="LicenseHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="exp">Years Of Experience</label>
+        <input formControlName="exp" type="text" class="form-control" id="exp" aria-describedby="userHelp" placeholder="Years Of Experience">
+        <small id="userHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <mat-radio-group aria-label="Select an option" formControlName="workedAt" class="form-control">
+          <label for="workedInput">Previously worked at:  </label>
+          <mat-radio-button value="Organization ">Organization  </mat-radio-button>
+          <mat-radio-button value="Schools/College">Schools/Colleges</mat-radio-button><br><br>
+          <mat-radio-button value="Home">Home</mat-radio-button>
+          <mat-radio-button value="Hospital">Hospital </mat-radio-button>
+          <mat-radio-button value="Other">Other</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    <div class="form-group" style="text-align:center;">
+      <br><br>
+        <button type="button" mat-raised-button class="button" style="background-color:#fd288c; margin-right: 5%; color: #fff;" (click)="registerDriver()">Register</button>
+    </div>
+    <h3>Already an user login here </h3>
+    <button id="button1" type="button1" mat-raised-button class="button1" style="background-color:#fd288c;margin-left: 39%; color: #fff;" [routerLink]="'/login-driver'">Log in</button>
+  </form>
+</form>
+</mat-card>
+</div>
+</body>
+
+

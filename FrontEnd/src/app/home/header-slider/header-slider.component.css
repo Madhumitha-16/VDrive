@@ -1,0 +1,36 @@
+.head{
+  color: #fff;
+  background-color: black;
+  height: 80%;
+  background-size: cover;
+  width: 100%;
+  background-image: url(https://ik.imagekit.io/drive/Web_Site/banner03__3ZXjudwvDT.jpeg?updatedAt=1636614929028);
+
+}
+h2 {
+  text-align: right;
+  font-size: 1.5cm;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+h3{
+  text-align: right;
+  font-size: 1cm;
+  padding-right: 18%;
+  padding-top: 5%;
+  padding-left: 0%;
+  font-weight: 500;
+}
+h4{
+  text-align: right;
+  padding-right: 25%;
+  margin-top: 5%;
+}
+.button1{
+  position:relative; left:65%; top:1%;
+  padding: 5px 30px;
+}
+.button2{
+  position:relative; left:66%; top:1%;
+  padding: 5px 35px;
+}

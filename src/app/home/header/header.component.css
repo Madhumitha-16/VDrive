@@ -1,0 +1,15 @@
+
+.mat-toolbar{
+  height: 7vh;
+  background-color:	rgba(17, 17, 17, 0.8);
+  color: floralwhite;
+
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+a{
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}

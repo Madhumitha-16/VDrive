@@ -1,0 +1,76 @@
+<app-header></app-header>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h1 style="text-align: center;padding-top: 4%;">Welcome to VDrive!<br></h1>
+  <h4 style="text-align: center;">Create new account and continue</h4>
+
+<div class="container">
+
+  <mat-card>
+  <form action="/registerUser" method="post">
+  <form [formGroup]="registerForm">
+    <h1>Register</h1>
+    <hr style="width: 10%;">
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Email address</label>
+      <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputUsername">Username</label>
+        <input formControlName="username" type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp" placeholder="username">
+        <small id="userHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="passwordInput">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="passwordInput" aria-describedby="passHelp" placeholder="password">
+      <small id="passHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="CpasswordInput">Confirm Password</label>
+        <input formControlName="cpass" type="password" class="form-control" id="CpasswordInput" aria-describedby="CpassHelp" placeholder="password">
+        <small id="CpassHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="addressInput">Address</label>
+        <input formControlName="address" type="text" class="form-control" id="addressInput" aria-describedby="addressHelp" placeholder="Address">
+        <small id="addressHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="cityInput">City</label>
+        <input formControlName="city" type="text" class="form-control" id="cityInput" aria-describedby="cityHelp" placeholder="City">
+        <small id="cityHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="type">Car Type</label>
+        <input formControlName="cType" type="text" class="form-control" id="type" aria-describedby="userHelp" placeholder="Car Type">
+        <small id="userHelp" class="form-text text-muted"></small>
+      </div>
+    <div class="form-group" style="text-align:center;">
+        <button type="button" mat-raised-button class="button" style="background-color:#fd288c; margin-right: 5%; color: #fff;" (click)="registerUser()">Register</button>
+
+    </div>
+    <br>
+    <h3>Already an user login here </h3>
+    <button id="button" type="button" mat-raised-button class="button1" style="background-color:#fd288c;margin-left: 39%; color: #fff;" [routerLink]="'/login-user'">Log in</button>
+  </form>
+</form>
+</mat-card>
+</div>
+</body>
+
+
+
+</html>

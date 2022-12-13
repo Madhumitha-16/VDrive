@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-button class="companyName" routerLink="/">
+      <span>VDrive</span>
+    </a>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> Home </a>
+      <a mat-button [routerLink]="'/about'"> About </a>
+      <a mat-button [routerLink]="'/bookings'"> Bookings </a>
+      <a mat-button [routerLink]="'/register'"> Register </a>
+      <mat-icon>meeting_room</mat-icon>
+      <a mat-button [routerLink]="'/login'"> Login/Logout </a>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>

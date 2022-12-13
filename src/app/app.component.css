@@ -1,0 +1,11 @@
+.navbar-nav{
+  display: flex;
+  font-size: 1cm;
+  color: brown;
+}
+a{
+  background-color: darkslategrey;
+}
+.jumbotron{
+  max-width: 100%;
+}

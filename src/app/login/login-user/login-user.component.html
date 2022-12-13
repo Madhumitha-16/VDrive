@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+
+    </div>
+    <div class="row">
+
+          <div class="col-md-6 main">
+            <form [formGroup]="loginUserForm">
+            <mat-card>
+              <form action="/sign_up" method="POST">
+                  <h1>Login</h1>
+                  <hr>
+                  <div class="form-group">
+                  <input formControlName="email" type="text" class="form-control" id="email" name="email" placeholder="Email" required />
+                  <br>
+                </div>
+                <div class="form-group">
+                  <input formControlName="password" type="text" class="form-control" id="password" name="password" placeholder="Password" required />
+                  <br>
+                </div>
+                <div class="form-group">
+                  <input type="submit" (click)="loginUser()" value="Submit" id="submit" />
+                </div>
+              </form>
+            </mat-card>
+          </form>
+          </div>
+
+          <div class="col-md-3">
+          </div>
+      </div>
+  </div>
+
+</body>
+</html>
+
+

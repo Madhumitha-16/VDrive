@@ -1,0 +1,29 @@
+
+.container{
+  margin: 4% 35% 10%;
+  padding: 1% 1% 1%;
+ float: left;
+ width: 30%;
+ background-color: rgb(236, 236, 236);
+ border-radius: 2%;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+h1{
+ font-size: 40px;
+ text-align: center;
+ padding-top: 5%;
+
+}
+body{
+  background-color: rgb(241, 241, 241);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-image: url(/assets/images/bg-img-login.jpg);
+}
+
+
+

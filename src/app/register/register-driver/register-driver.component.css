@@ -1,0 +1,48 @@
+.main {
+  margin-top: 15%;
+  padding: 20px;
+  font-family: 'Helvetica', serif;
+  box-shadow: 5px 5px 7px 5px #888888;
+  background-color: #fff;
+}
+.container{
+
+  float: left;
+}
+.main h1 {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Helvetica', serif;
+}
+
+input {
+  font-family: 'Helvetica', serif;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #767474;
+}
+
+input[type=submit] {
+  font-family: 'Helvetica', serif;
+  width: 25%;
+  background-color:#fd288c;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: 38%;
+}
+hr{
+  width: 50%;
+}
+
+body{
+  background-image: url(https://endthrive.com/wp-content/uploads/2019/04/Depositphotos_44256611_xl-2015-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
